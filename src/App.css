@@ -2,6 +2,29 @@
   width: 15rem;
   height: 45px;
   display: flex;
+
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: rgb(192, 202, 244);
+  padding: 0 16px;
+  background-image: url("https://images.unsplash.com/photo-1489183988443-b37b7e119ba6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80");
+
+  background-size: 100%;
+}
+
+/* body {
+  background-color: #847d70;
+} */
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
 }
 
 #InputEmail {
@@ -18,16 +41,21 @@
 }
 
 .form-group {
-  background-color: #DCDCDC;
-  width: 20rem;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+  background-color: #3da2dd;
+
+  width: 20%;
+  font-family: "McLaren", cursive;
   height: 30rem;
+  color: #000000;
   padding-left: 2rem;
-  display: inline-block;
-  border: 5px solid black;
+  display: block;
+
+
 }
 
-.btn {
-  width: 140px;
+.btnSubmit {
+  width: 90px;
   height: 45px;
   font-family: 'Roboto', sans-serif;
   font-size: 11px;
@@ -35,19 +63,164 @@
   letter-spacing: 2.5px;
   font-weight: 500;
   color: #000;
-  background-color: rgb(185, 180, 180);
+  background-color: rgb(255, 255, 255);
   border: none;
   border-radius: 45px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
-  margin-left: 4rem;
+  margin-left: 5rem;
 }
 
-.btn:hover {
-  background-color: #313331;
+.btnSubmit:hover {
+  background-color: #3593c9;
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
   color: #fff;
   transform: translateY(-7px);
+}
+
+.Display-Users {
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  width: 50%;
+
+
+  /* width: min-content; */
+  height: auto;
+  font-family: "McLaren", cursive;
+  /* background: none; */
+  align-content: center;
+  /* justify-content: center; */
+  /* margin: 40rem; */
+  /* height: 10rem; */
+  /* background-color: #dcdcdc; */
+  backdrop-filter: blur(10px);
+
+  text-align: center;
+  /* margin-left: 29rem; */
+  /* display: inline-block; */
+  /* border: 5px solid black; */
+  padding: 2rem 2rem;
+  margin: 2rem;
+  margin-left: 34rem;
+  margin-bottom: 10rem;
+  margin-top: -30.5rem;
+  display: block;
+  /* margin-left: 63rem; */
+  /* margin-bottom: 5rem; */
+  /* padding: 2rem; */
+  /* padding: 1rem 1rem; */
+  /* vertical-align: left; */
+  /*  position: absolute; */
+}
+
+.Display-Users li {
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  color: #DCDCDC;
+
+}
+
+#op {
+  color: rgb(255, 255, 255);
+}
+
+.btn {
+  width: 67px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  background-color: rgb(47, 114, 237);
+  border: none;
+  border-radius: 0px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-right: 50%;
+  margin-top: 15%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+
+}
+
+.btn:hover {
+  background-color: rgb(247, 167, 8);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+  border-width: 1px 0 0 1px;
+  margin-bottom: 24px;
+
+  width: 100%;
+
+}
+
+th {
+  border-width: 0 1px 1px 0;
+  background-color: rgb(47, 114, 237);
+  color: #fdfdfd;
+  font-weight: bold;
+  line-height: 24px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  padding: 10px
+}
+
+table td {
+  width: 30%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.tb1 {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+input {
+  background: rgb(223, 220, 193);
+}
+
+table #name {
+  width: 25%;
+}
+
+table #email {
+  width: 25%;
+  text-decoration: underline;
+}
+
+table #address {
+  width: 40%;
+}
+
+tr:nth-child(odd) {
+  background: #EEE;
+}
+
+h1 {
+  text-align: center;
+
+}
+
+#user {
+  color: #fdfdfd;
 }
